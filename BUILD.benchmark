@@ -1,0 +1,15 @@
+cc_library(
+    name = "main",
+    srcs = glob(
+      ["src/*.cc"]
+    ),
+    hdrs = glob([
+      "include/**/*.h",
+      "src/*.h"
+    ]),
+    copts = [
+      "-Iexternal/benchmark/include",
+      "-DHAVE_STD_REGEX",
+    ],
+    visibility = ["//visibility:public"],
+)

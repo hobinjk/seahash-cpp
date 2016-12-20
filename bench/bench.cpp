@@ -1,5 +1,5 @@
-#include <benchmark/benchmark.h>
-#include "seahash.h"
+#include "benchmark/benchmark.h"
+#include "lib/seahash.h"
 
 static void benchmarkHashing(benchmark::State& state) {
   size_t size = 4096;
